@@ -1,0 +1,43 @@
+div.scroll {
+    margin: 4px, 4px;
+    padding: 4px;
+    width: 95%;
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+div.container {
+    height: 100%;
+}
+
+th {
+    background: rgb(201, 201, 201);
+    position: sticky;
+    top: 0;
+}
+
+button#addButton {
+    width: 100px;
+    height: 48px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.top {
+    width: 95%;
+    display: flex;
+}
+
+.button {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+
+h1 {
+    width: 50%;
+    float: left
+}

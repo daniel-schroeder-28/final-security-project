@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="top">
+        <h1>My Passwords</h1>
+        <div class="button">
+            <button (click)="addPassword()" id="addButton" class="btn btn-success">Add</button>
+        </div>
+    </div>
+
+    <div class="alert alert-success" *ngIf="message">{{ message }}</div>
+
+    <div class="scroll">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let password of passwords">
+                    <td>{{ password.name }}</td>
+                    <td>{{ password.username }}</td>
+                    <td>
+                        <button (click)="updatePassword(password.id)" class="btn btn-success">View/Update</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
